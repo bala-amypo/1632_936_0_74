@@ -8,11 +8,14 @@ import com.example.demo.service.StudentService;
 
 import com.example.demo.entity.StudentEntity;
 
+import com.example.demo.service.StudentRepository;
+
 @Service
 
 
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
+
 @Override
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);
