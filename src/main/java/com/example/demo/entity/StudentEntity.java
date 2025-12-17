@@ -17,7 +17,7 @@ public class StudentEntity{
     private String password;
     private Date created;
 
-    public Data getCreated(){
+    public Date getCreated(){
         return created;
     }
     public void setCreated(Date created){
