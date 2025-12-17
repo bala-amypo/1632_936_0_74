@@ -7,7 +7,10 @@ import com.example.demo.service.StudentService;
 @Service
 
 public class StudentServiceImpl implements StudentService{
-    StudentEntity postData(StudentEntity stu); 
+
+    public StudentEntity postData(StudentEntity stu){
+        
+    }
     
 
 }
