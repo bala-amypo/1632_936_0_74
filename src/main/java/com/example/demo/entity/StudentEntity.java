@@ -1,4 +1,5 @@
-package com.example.demo.entity
+package com.example.demo.entity;
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ public class StudentEntity{
         return created;
     }
     public void setCreated(Date created){
-        this.create=created;
+        this.create=create;
     }
     
 
@@ -27,7 +28,7 @@ public class StudentEntity{
         return id;
     }
     public void setId(Integer id){
-        this.id=id
+        this.id=id;
     }
 
 
