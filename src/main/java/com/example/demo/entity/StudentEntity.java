@@ -23,7 +23,6 @@ public class StudentEntity{
     }
     
 
-
     public Integer getId(){
         return id;
     }
