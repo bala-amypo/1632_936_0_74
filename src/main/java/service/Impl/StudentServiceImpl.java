@@ -8,7 +8,7 @@ import com.example.demo.service.StudentService;
 
 import com.example.demo.entity.StudentEntity;
 
-import com.example.demo.service.StudentRepository;
+import com.example.demo.repository.StudentRepository;
 
 @Service
 
