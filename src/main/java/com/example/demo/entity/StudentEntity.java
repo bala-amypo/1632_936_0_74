@@ -1,6 +1,11 @@
 package com.example.demo.entity
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Entity;
+
 @Entity
 public class StudentEntity{
+    @Id
     private Integer id;
     private String name;
     private String email;
@@ -44,18 +49,16 @@ public class StudentEntity{
     public void setPassword(String password){
         this.password=password;
     }
-    public SampleEntity(Integer id,String name, String email,String password){
+    public StudentEntity(Integer id,String name, String email,String password){
         this.id=id;
         this.name=name;
         this.email=email;
         this.password=password;
         this.created=created;
     }
-    public StudentEntity(){}
+    public StudentEntity(){
 
-
-
-
+    }
 
 
 
