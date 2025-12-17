@@ -1,1 +1,4 @@
-public class StudentEntity
+package com.example.demo.entity
+public class StudentEntity{
+
+}
