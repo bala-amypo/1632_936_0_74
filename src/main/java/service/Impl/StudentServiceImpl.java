@@ -13,7 +13,7 @@ import com.example.demo.entity.StudentEntity;
 
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
-@override
+@Override
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);
 
