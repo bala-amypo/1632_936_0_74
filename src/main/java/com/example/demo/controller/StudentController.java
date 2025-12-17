@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController{
     @Autowired StudentService ser;
 
-    @PostMapping("/post")
+    @PostMapping("/post");
+    public StudentEntity sendData(@RequestBody StudentEntity stu){
+        re
+
+    }
 
 }
