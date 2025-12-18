@@ -71,6 +71,12 @@ public String getuserName(){
     public void setAge(int age){
         this.age=age;
     }
+    public ValidationEntity(Long id,
+    @NotNull 
+    @Size(min=2,max=10,message ="must be a 2 to 10 character"))String username,
+    @NotNull
+    @Email(message = "Email is not valid") String email;
+    @Size()
 
 
 }
