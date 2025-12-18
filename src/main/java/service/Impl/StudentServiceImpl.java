@@ -11,6 +11,7 @@ import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepository;
 import java.util.List;
 
+
 @Service
 
 
@@ -29,8 +30,10 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public String DeleteData(){
-    return
+    public String DeleteData(@Pathvariable int id){
+        student.deleteById(id);
+        return "Deleted Successfully";
+    
 
     }
 
