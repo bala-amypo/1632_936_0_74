@@ -79,6 +79,7 @@ public String getuserName(){
     @NotNull@Max(30) @Positive(message = "Message must be a positive number")int age)
     {
         this.id=id;
+        this.email=email;
         this.username=username;
         this.password=password;
         this.age=age;
