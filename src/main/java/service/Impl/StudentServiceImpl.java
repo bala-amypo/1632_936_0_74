@@ -27,7 +27,6 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public List<StudentEntity>getAllData(){
     return student.findAll();
-
     }
 
     @Override
@@ -35,7 +34,9 @@ public class StudentServiceImpl implements StudentService{
         student.deleteById(id);
         return "Deleted Successfully";
     
-
     }
+
+    @Override
+    public 
 
 }

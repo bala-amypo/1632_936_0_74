@@ -12,5 +12,7 @@ public interface StudentService{
 
     String DeleteData(int id);
 
+    studentEntity GetData(int id);
+
 
 }
