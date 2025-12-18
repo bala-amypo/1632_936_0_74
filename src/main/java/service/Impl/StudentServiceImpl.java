@@ -19,6 +19,8 @@ import java.util.List;
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
 
+//definition
+
 @Override
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);
