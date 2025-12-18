@@ -6,5 +6,7 @@ public interface StudentService{
 
     StudentEntity postData(StudentEntity stu);      //method declaration
 
+    List<StudentEntity>getAllData(){}
+
 
 }
