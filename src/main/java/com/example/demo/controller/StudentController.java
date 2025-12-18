@@ -30,7 +30,7 @@ public class StudentController{
         return ser.DeleteData(id);
     }
 
-    @GetMapping("/GetData/{id}")
+    @GetMapping("/getData/{id}")
     public StudentEntity getval(@PathVariable int id){
         return ser.GetData(id);
     }

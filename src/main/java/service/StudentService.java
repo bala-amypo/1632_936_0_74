@@ -14,5 +14,7 @@ public interface StudentService{
 
     studentEntity GetData(int id);
 
+    StudentEntity updateData(int id,StudentEntity entity);
+
 
 }
