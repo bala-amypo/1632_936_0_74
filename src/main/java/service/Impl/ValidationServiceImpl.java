@@ -15,11 +15,12 @@ import java.util.List;
 @Service
 
 
-public class StudentServiceImpl implements StudentService{
-    @Autowired StudentRepository student;
+public class ValidationtServiceImpl implements ValidationService{
+    @Autowired ValidationRepository validate;
+    @Override
+    public ValidationEntity postData(ValidationEntity valid){
+        return validate.save(valid);
 
-
-
-    
+    }
 
 }

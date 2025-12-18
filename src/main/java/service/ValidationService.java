@@ -6,8 +6,6 @@ import java.util.List;
 
 public interface ValidationService{
 
-
-
     ValidationEntity postData(ValidationEntity valid);     
 
 
