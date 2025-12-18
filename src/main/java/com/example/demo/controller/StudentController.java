@@ -31,9 +31,10 @@ public class StudentController{
     }
 
     @GetMapping("/getid/{id}")
-    public StudentEntity getdataid(@PathVariable int id)
-   
-        
+    public StudentEntity getdataid(@PathVariable int id){
+        return ser.getData(id);
+    }
+     
     }
 
 
