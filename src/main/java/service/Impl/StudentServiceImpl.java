@@ -9,6 +9,7 @@ import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
 
 import com.example.demo.repository.StudentRepository;
+import java.util.List;
 
 @Service
 
@@ -21,4 +22,11 @@ public class StudentServiceImpl implements StudentService{
         return student.save(stu);
 
     }
+    @Override
+    public List<StudentEntity>getAllData(){
+    return student.findAll();
+
+
+    }
+
 }
