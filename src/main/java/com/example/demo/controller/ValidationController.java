@@ -8,12 +8,12 @@ import jakarta.validation.Valid;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 
-
+@RestController
 
 public class ValidationController{
     @Autowired ValidationService ser;
 
-    @PostMapping("/post")
+    @PostMapping("/post_Validate")
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity valid){
         return ser.postData(valid);
 
