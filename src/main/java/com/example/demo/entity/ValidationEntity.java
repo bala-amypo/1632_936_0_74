@@ -1,12 +1,21 @@
 package com.example.demo.entity;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.size;
+
+
 
 @Entity
 public class ValidationEntity{
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @NotNull
+    @Size(min=2,max=0,message )
     private String username;
     private String email;
     private String password;
