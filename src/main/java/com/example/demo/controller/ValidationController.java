@@ -9,11 +9,12 @@ import com.example.demo.service.ValidationService;
 
 
 
-public class StudentController{
-    @Autowired StudentService ser;
+public class ValidationController{
+    @Autowired ValidationService ser;
 
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu){
-        return ser.postData(stu);
+    public ValidationEntity sendData(@RequestBody ValidationEntity valid){
+        return ser.postData(valid);
 
     }
+}

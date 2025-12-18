@@ -9,12 +9,10 @@ import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
 
 import com.example.demo.repository.ValidationRepository;
-import java.util.List;
+//import java.util.List;
 
 
 @Service
-
-
 public class ValidationtServiceImpl implements ValidationService{
     @Autowired ValidationRepository validate;
     @Override
