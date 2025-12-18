@@ -13,7 +13,7 @@ import com.example.demo.repository.ValidationRepository;
 
 
 @Service
-public class ValidationtServiceImpl implements ValidationService{
+public class ValidationServiceImpl implements ValidationService{
     @Autowired ValidationRepository validate;
     @Override
     public ValidationEntity postData(ValidationEntity valid){
