@@ -20,6 +20,7 @@ public class ValidationEntity{
     @NotNull
     @Size(min=2,max=10,message = "must be 2 to 10 character")
     private String username;
+
     @NotNull
     @Email(message = "Email is not valid")
     private String email;
@@ -34,17 +35,17 @@ public class ValidationEntity{
     @NotNull
     private int age;
 
-public Long getId(){
+    public Long getId(){
         return id;
     }
     public void setId(Long id){
         this.id=id;
     }
 
-public String getuserName(){
+    public String getuserName(){
         return username;
     }
-    public void setName(String username){
+    public void setuserName(String username){
         this.username=username;
     }
 
