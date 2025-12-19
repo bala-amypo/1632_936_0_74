@@ -18,5 +18,6 @@ public class StudentDetailEntity{
     private Long id;
     private  String name;
     private String email;
+    private String address;
 
 }
