@@ -21,7 +21,7 @@ public class StudentDetailServiceImpl implements StudentDetailService{
 //definition
 
 @Override
-    public StudentDetailEntity postData(StudentdetailEntity stu){
+    public StudentDetailEntity postData(StudentDetailEntity stu){
         return student.save(stu);
 
     }
