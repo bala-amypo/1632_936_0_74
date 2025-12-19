@@ -9,6 +9,8 @@ import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
 
 import com.example.demo.repository.ValidationRepository;
+import com.example.demo.exception.ValidationException;
+
 //import java.util.List;
 
 
