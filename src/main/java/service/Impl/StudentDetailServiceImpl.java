@@ -4,25 +4,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.service.StudentService;
+import com.example.demo.service.StudentDetailService;
 
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.StudentDetailEntity;
 
-import com.example.demo.repository.StudentRepository;
-import java.util.List;
-//import org.springframework.web.bind.annotation.PathVariable;
+import com.example.demo.repository.StudentDetailRepository;
+
 
 
 @Service
 
 
-public class StudentServiceImpl implements StudentService{
-    @Autowired StudentRepository student;
+public class StudentDetailServiceImpl implements StudentDetailService{
+    @Autowired StudentDetailRepository student;
 
 //definition
 
 @Override
-    public StudentEntity postData(StudentEntity stu){
+    public StudentDetailEntity postData(StudentdetailEntity stu){
         return student.save(stu);
 
     }
+}
