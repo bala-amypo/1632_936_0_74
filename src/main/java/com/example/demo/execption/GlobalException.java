@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@RestcontrollerAdvice
+@RestControllerAdvice
 public class GlobalException{
 
     @ExceptionHandler(ValidationException.class)
