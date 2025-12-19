@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 
-public class Controller{
+public class TimeStampController{
     @Autowired TimeStampService ser;
 
     @PostMapping("/TS_post")

@@ -7,7 +7,7 @@ public interface TimeStampService{
 
     //method declarations
 
-    StudentEntity postData(StudentEntity stu);     
+    TimeStampEntity postData(TimeStampEntity stu);     
 
 
 
