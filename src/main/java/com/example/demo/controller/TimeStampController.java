@@ -5,7 +5,7 @@ import com.example.demo.service.TimeStampService;
 public class Controller{
     @Autowired TimeStampService ser;
 
-    @PostMapping("/Tpost")
+    @PostMapping("/TS_post")
     public TimeStampEntity sendData(@RequestBody TimeStampEntity stu){
         return ser.postData(stu);
 
