@@ -9,8 +9,8 @@ import jakarta.persistence.Entity;
 public class StudentIdEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
-    private  String college;
-    private String Department;
+    private Long IdCard;
+    private  
+    private 
 
 }
