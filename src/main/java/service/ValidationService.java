@@ -8,6 +8,6 @@ public interface ValidationService{
 
     ValidationEntity postData(ValidationEntity valid);     
 
-    ValidationEntity GetData(int id);
+    ValidationEntity GetData(Integer id);
  
 }
