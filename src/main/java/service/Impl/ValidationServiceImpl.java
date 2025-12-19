@@ -22,7 +22,7 @@ public class ValidationServiceImpl implements ValidationService{
     }
 
     @Override
-    public ValidationEntity GetData(int id){
+    public ValidationEntity GetData(Integer id){
         return validate.findById(id).orElse(other:null);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
