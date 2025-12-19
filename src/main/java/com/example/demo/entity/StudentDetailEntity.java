@@ -1,6 +1,11 @@
 package com.example.demo.entity;
 
+
 public class StudentDetailEntity{
-    private Integer id;
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
+    private  int registerNumber;
+    private String address;
+
 }
