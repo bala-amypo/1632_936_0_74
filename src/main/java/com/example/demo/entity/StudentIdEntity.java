@@ -7,7 +7,8 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 @Data
@@ -17,9 +18,10 @@ public class StudentIdEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private int CardNumber;
+    private int cardNumber;
 
 @OneToOne
+@JoinColumn(name = "Student_id")
     private StudentDetailEntity student;
     
 
