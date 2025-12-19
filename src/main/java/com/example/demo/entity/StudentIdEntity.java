@@ -16,8 +16,11 @@ import lombok.NoArgsConstructor;
 public class StudentIdEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long IdCardNumber;
-    private Long StudentId;
+    private Integer id;
+    private int CardNumber;
+
+@OneToOne
+    private StudentDetailEntity student;
     
 
 }
