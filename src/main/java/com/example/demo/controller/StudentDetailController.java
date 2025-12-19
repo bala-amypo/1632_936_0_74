@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-import com.example.demo.service.TimeStampService;
+import com.example.demo.service.StudentDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,7 +12,7 @@ public class StudentDetailController{
     @AutowiredStudentDetailService ser;
 
     @PostMapping("/Student_post")
-    public StudentDetailEntity sendData(@RequestBody TimeStampEntity stu){
+    public StudentDetailEntity sendData(@RequestBody StudentDetailEntity stu){
         return ser.postData(stu);
 
     }
