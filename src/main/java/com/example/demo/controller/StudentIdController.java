@@ -9,7 +9,7 @@ import com.example.demo.entity.StudentIdEntity;
 @RestController
 
 public class StudentIdController{
-    @AutowiredStudentIdService ser;
+    @Autowired StudentIdService ser;
 
     @PostMapping("/Student_post")
     public StudentIdEntity sendData(@RequestBody StudentIdEntity stu){
