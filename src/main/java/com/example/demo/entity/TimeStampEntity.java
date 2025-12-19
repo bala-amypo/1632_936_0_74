@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.PrePersist; 
-
+import jakarta.persistence.PreUpdate; 
 
 @Entity
 @Data
@@ -32,6 +32,8 @@ public class TimeStampEntity{
         this.updateAt=now;
     }
 
-    public void update
+    public void Onupdate(){
+        this.updateAt = now;
+    }
 
 }
