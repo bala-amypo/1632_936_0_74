@@ -21,7 +21,7 @@ public class ValidationController{
 
     }
     @GetMapping("/Validate_getid/{id}")
-    public ValidationEntity getval(@PathVariable int id){
+    public ValidationEntity getval(@PathVariable Long id){
         return ser.GetData(id);
     }
 }
